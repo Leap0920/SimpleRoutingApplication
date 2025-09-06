@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<main style="background-color: #fff9e6;">
+    <!-- Hero / Banner -->
+    <section class="text-center py-5"
+             style="background: url('/Images/QCU.jpg') center/cover no-repeat; color: white;">
+        <div class="container" style="background: rgba(0,0,0,0.5); padding: 2rem; border-radius: 8px;">
+            <h1 class="display-4 fw-bold">Quezon City University</h1>
+            <p class="lead mb-1">Bachelor of Science in Information Technology</p>
+            <p class="mb-4">3rd Year • Section <strong>SBIT‑3C</strong></p>
+            <a href="@Url.Action("Students", "Home")" class="btn btn-light btn-lg px-4">View Student List</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container py-5">
+        <div class="row text-center mb-5">
+            <h2 class="fw-bold">Welcome to the SBIT‑3C Portal</h2>
+            <p class="text-muted">Your hub for class information, announcements, and student records.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">📋 Student List</h5>
+                        <p class="card-text text-muted">Browse the complete list of SBIT‑3C students with details.</p>
+                        <a href="@Url.Action("Students", "Home")" class="btn btn-outline-primary">View List</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">📢 Announcements</h5>
+                        <p class="card-text text-muted">Stay updated with the latest class and school news.</p>
+                        <a href="@Url.Action("Announcements", "Home")" class="btn btn-outline-primary">View Announcements</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">📅 Schedule</h5>
+                        <p class="card-text text-muted">Check your class schedule and important dates.</p>
+                        <a href="@Url.Action("Schedule", "Home")" class="btn btn-outline-primary">View Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 text-center" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Proud to be SBIT‑3C</h2>
+            <p class="mb-4 text-muted">Excellence • Innovation • Collaboration</p>
+            <a href="@Url.Action("Contact", "Home")" class="btn btn-primary btn-lg px-4">Contact Class Representative</a>
+        </div>
+    </section>
+</main>
